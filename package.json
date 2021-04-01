@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-sw": "http-server ./build"
+    "start-sw": "npm build && http-server ./build"
   },
   "eslintConfig": {
     "extends": [

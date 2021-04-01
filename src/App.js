@@ -63,9 +63,9 @@ function App() {
   useEffect(() => { 
     let firestore=firebaseDb.firestore();
     let docRef=firestore.doc('todoV/todoView');
-    docRef.set({
-      todovalue:[]
-    });
+    // docRef.set({
+    //   todovalue:[]
+    // });
     if(navigator.onLine && !JSON.parse(localStorage.getItem(localStorageName))){
       docRef.get().then((doc)=>{
           if(doc.data().todovalue.length>0)
