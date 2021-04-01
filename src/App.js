@@ -67,6 +67,7 @@ function App() {
     //   todovalue:[]
     // });
     if(navigator.onLine){
+      localStorage.removeItem(localStorageName);
       docRef.get().then((doc)=>{
           if(doc.data().todovalue.length>0)
             localStorage.setItem(localStorageName, JSON.stringify(doc.data().todovalue));
