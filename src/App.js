@@ -85,8 +85,7 @@ function App() {
         onChangeTxt={onChangeTxt}
         onClickBtn={onClickBtn}
       />
-      <React.Suspense fallback={<h1>Loading ...</h1>}>
-        {arrValue.length > 0 &&
+      {arrValue.length > 0 &&
         <> 
           <div className="flex-display">
             {arrValue.map((item,index)=>{
@@ -105,9 +104,7 @@ function App() {
           </div>
           <button onClick={onClickSave}>Save</button>
         </>
-        }
-      </React.Suspense>
-      
+      }      
     </div>
   );
 }

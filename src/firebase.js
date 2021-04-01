@@ -1,5 +1,6 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/firestore';  
+
 var firebaseConfig = {
         apiKey: "AIzaSyDCFnzDsOiXRBX6eH_sCc0Oue_osGlP_us",
         authDomain: "todovelotio.firebaseapp.com",
