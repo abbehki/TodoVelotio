@@ -66,7 +66,7 @@ function App() {
     // docRef.set({
     //   todovalue:[]
     // });
-    if(navigator.onLine && !JSON.parse(localStorage.getItem(localStorageName))){
+    if(navigator.onLine){
       docRef.get().then((doc)=>{
           if(doc.data().todovalue.length>0)
             localStorage.setItem(localStorageName, JSON.stringify(doc.data().todovalue));
